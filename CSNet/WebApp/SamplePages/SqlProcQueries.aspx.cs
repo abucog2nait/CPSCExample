@@ -104,5 +104,12 @@ namespace WebApp.SamplePages
             CategoryProductList.DataSource = null;
             CategoryProductList.DataBind();
         }
+
+        protected void CategoryProductList_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            //the developer must code this event method when they install paging 
+            //this method will do 2 things 
+            //a) set the control's PageIndex property to the data "page" of the data collection 
+        }
     }
 }
